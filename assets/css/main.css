@@ -1,0 +1,1046 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+    font-family: 'Caveat', cursive;
+    font-family: 'Inspiration', cursive;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    background-color: #A5141A;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+header .navbar .logo{
+    width: 100px;
+}
+header .navbar .logo img{
+    width: 100%;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link{
+color: white;
+font-weight: 700;
+transition: all 300ms ease-in-out;
+}
+header .navbar .navbar-nav .nav-item p{
+    margin-top: 7px;
+    margin-left: 16px;
+    position: relative;
+    cursor: pointer;
+}
+header .navbar .navbar-nav .nav-item p span{
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    background: #ffb91a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-transform: capitalize;
+}
+header .navbar .navbar-nav .nav-item p i{
+    color: white;
+
+    font-size: 25px;
+}
+header .navbar .navbar-toggler{
+    position: relative;
+    box-shadow: none;
+}
+header .navbar .navbar-toggler span:first-child,
+header .navbar .navbar-toggler span:nth-child(2),
+header .navbar .navbar-toggler span:last-child{
+    width: 30px;
+    height: 3px;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: -7px;
+    right: 0;
+}
+header .navbar .navbar-toggler span:nth-child(2){
+    top: 3px;
+}
+header .navbar .navbar-toggler span:last-child{
+    top: 12px;
+}
+header .socalMedia ul li a i:hover,
+header .navbar .navbar-nav .nav-item .nav-link:hover{
+color: #ffb91a;
+}
+header .socalMedia{
+    transition: all 300ms ease-in-out;
+}
+header .socalMedia ul {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+header .socalMedia ul li a{
+    color: white;
+}
+header .socalMedia ul li a i{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.cart{
+    position: relative;
+
+
+}
+.cart .cart-box{
+    position: absolute;
+    display: none;
+    right: 8px;
+    top: 2px;
+    width: 361px;
+    height: 516px;
+    border-radius: 4px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.1 );
+    transition: all 300ms ease-in-out;
+    padding: 20px;
+}
+.cart .cart-box .cart-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart .cart-box .cart-title .icon {
+    cursor: pointer;
+    padding: 8px;
+    border: 2px solid #A5141A;
+    border-radius: 4px;
+}
+.cart .cart-box .cart-title .icon i{
+    font-size: 18px;
+}
+.cart .cart-box .cart-title div span{
+    font-weight: bold;
+}
+.cart .cart-box .cart-body{
+    margin-top: 35px;
+}
+.bgHome{
+    background-image: url(../img/homemade-tasty-beef-burger-FRT5PYB.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.bgHome .title{
+color: white;
+position: absolute;
+top: 300px;
+
+}
+.bgHome .title  h1{
+    font-family:cursive;
+    color: #ffb91a;
+    line-height: 60px;
+}
+.bgHome .title h2{
+    width: 67%;
+    font-size: 50px;
+}
+.bgHome .title button{
+    padding: 11px;
+    width: 157px;
+    background-color: #A5141A;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 11px;
+    margin-top: 15px;
+    border: 2px solid #A5141A;
+    transition: all 300ms ease-in-out;
+}
+.bgHome .title button:hover{
+    background-color: transparent;
+}
+.meals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding-top: 50px;
+     padding-bottom: 50px;
+}
+.meals .meals-card{
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.meals .meals-card img{
+    width: 130px;
+}
+.meals .meals-card:hover{
+    border: 1px solid #ffb91a;
+}
+.cardBurger{
+background-color: #f7f7f7;
+position: relative;
+}
+
+.cardBurger .box .image img{
+    border-radius: 10px;
+  
+}
+.cardBurger .box .chickensCard ,
+.cardBurger .box .burgerCard{
+    position: relative;
+}
+
+.cardBurger .box{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cardBurger .box .burgerCard img{
+height:  540px;
+border-radius: 10px;
+}
+.cardBurger .box .chickensCard img{
+    height: 277px;
+    border-radius: 10px;
+}
+.cardBurger .box .pizzaCard img{
+    height: 243px;
+    border-radius: 10px;
+}
+
+.cardBurger .box .burgerCard .textPrice{
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 58%;
+}
+.cardBurger .box .pizzaCard .textPrice .card-title,
+.cardBurger .box .chickensCard .textPrice .card-title,
+.cardBurger .box .burgerCard .textPrice .card-title{
+     font-size: 35px;
+     font-weight: 700;
+}
+.cardBurger .box .pizzaCard .textPrice .discribtion,
+.cardBurger .box .chickensCard .textPrice .discribtion,
+.cardBurger .box .burgerCard .textPrice .discribtion{
+    margin-top: 20px;
+}
+.cardBurger .box .pizzaCard .price,
+.cardBurger .box .chickensCard .price,
+.cardBurger .box .burgerCard .price{
+    color: #A5141A;
+    font-weight: bold;
+}
+.cardBurger .box .burgerCard button{
+    outline: none;
+    border: none;
+    background: #A5141A;
+    padding: 12px 22px ;
+    display: block;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.cardBurger .box .burgerCard button a{
+color: white;
+text-decoration: none;
+text-transform: capitalize;
+font-weight: bold;
+
+}
+.cardBurger .box .chickensCard .textPrice{
+    position: absolute;
+    top: 12%;
+    left: 56%;
+    color: white;
+}
+.cardBurger .box .pizzaCard .price,
+.cardBurger .box .chickensCard .price{
+   color: #ffb91a;
+}
+
+
+
+.cardBurger .box .pizzaCard .textPrice{
+    position: absolute;
+    top: 57%;
+    left: 76%;
+    color: white;
+}
+.aboutFood{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.aboutFood .image {
+    width: 100%;
+}
+.aboutFood .image img{
+    width: 100%;
+}
+.aboutFood .title {
+    padding: 20px;
+}
+.aboutFood .title .mainTitle{
+color: #ffb91a;
+font-family: 'Caveat';
+font-weight: 600;
+}
+.aboutFood .title .subTitle{
+    color: black;
+    width: 80%;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.aboutFood .title .describtion{
+    margin-top: 25px;
+    color: #6b6b6b;
+}
+.ordering .foodTitle button,
+.aboutFood .title button{
+    outline: none;
+    border: none;
+    background: #A5141A;
+    padding: 14px 28px ;
+    display: block;
+    border-radius: 4px;
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Deliver{
+position: relative;
+}
+.Deliver .overLay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(0 0 0 / 19%);
+}
+.Deliver .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.Deliver .title .mainTitle{
+    color: #ffb91a;
+    font-family: 'Caveat';
+    font-size: 35px;
+}
+.Deliver .title .subTitle{
+    color: white;
+    font-size: 65px;
+}
+.Deliver .title button{
+    outline: none;
+    border: none;
+    background: #A5141A;
+    padding: 14px 28px ;
+    display: block;
+    border-radius: 4px;
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:15px  auto;
+}
+.Satisfaction-levl{
+    background-color: #ffb91a;
+    padding-top: 50px;
+    padding-top: 50px;
+}
+.Satisfaction-levl .box {
+    color: white;
+     text-align: center;
+}
+.Satisfaction-levl .box h2{
+    font-size: 40px;
+}
+.menu{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.menu .menu-list{
+background-color: #A5141A;
+padding: 20px;
+}
+.menu .menu-list h3{
+    color: #ffb91a;
+    font-family: 'Caveat';
+    font-size: 40px;
+}
+.menu .menu-list h2{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.menu .menu-list .typeAndPrice{
+    color: #ffff;
+    margin-bottom: 25px;
+}
+.meal-card{
+    background-color:#F7F7F7;
+}
+.meal-card{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.meal-card .titleMeal{
+text-align: center;
+padding-bottom: 30px;
+}
+.meal-card .titleMeal h2{
+    font-family: 'Caveat';
+    color: #ffb91a;
+    font-size: 35px;
+}
+.meal-card .titleMeal h3{
+    color: #000000e6;
+    font-weight: bold;
+    font-size: 40px;
+}
+.meal-card .titleMeal p{
+    color: #6b6b6b;
+}
+.meal-card .box-meal .box{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  transparent;
+}
+.meal-card .box-meal .box:hover{
+    border-color: #ffb91a;
+}
+.meal-card .box-meal .box .image{
+    width: 300px;
+}
+.meal-card .box-meal .box .mealInformation{
+padding: 25px;
+}
+.meal-card .box-meal .box .mealInformation h4{
+    width: 80%;
+    color: #383838;
+    font-weight: 700;
+}
+.meal-card .box-meal .box .mealInformation span{
+    color: #A5141A;
+    font-size: 30px;
+    font-weight: bold;
+}
+.meal-card .box-meal .box .mealInformation p{
+    color: #6b6b6b;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.meal-card .box-meal .box .mealInformation button{
+    border: none;
+    border-bottom: 2px solid #A5141A;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.meal-card .box-meal .box .mealInformation button:hover{
+    color: #A5141A;
+}
+.ordering{
+position: relative;
+}
+.ordering .bgFood img{
+    height: 500px;
+}
+.ordering .overLay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 66%);
+}
+.ordering .foodTitle{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+
+}
+.ordering .foodTitle{
+text-align: center;
+}
+.ordering .foodTitle h2{
+font-family: "Inspiration" ;
+font-size: 45px;
+color: #ffb91a;
+}
+.ordering .foodTitle h3{
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.ordering .foodTitle .saleAndlist{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+.ordering .foodTitle .saleAndlist .price p{
+font-size: 50px;
+color: #ffb91a;
+font-weight: bold;
+margin-bottom: 0px;
+}
+.ordering .foodTitle .saleAndlist span{
+color: white;
+font-weight: bold;
+text-align: end;
+display: block;
+margin-top: -8px;
+}
+.ordering .foodTitle .saleAndlist .meal-type{
+color: white;
+font-weight: 600px;
+}
+.ordering .foodTitle .saleAndlist .meal-type li{
+    position: relative;
+    margin-bottom: 10px;
+}
+.ordering .foodTitle .saleAndlist{
+    margin-bottom: 25px;
+}
+.ordering .foodTitle .saleAndlist .meal-type li::before{
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 6px;
+    width: 15px;
+    height: 15px;
+    background-color: #A5141A;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.ordering .foodTitle button{
+    margin: auto;
+}
+.Testimonials{
+
+}
+.Testimonials .bg-pizza{
+background-image: url(../img/bg-pizza.jpg);
+min-height: 100vh;
+background-position: 100% 50%;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.Testimonials .title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #6b6b6b;
+}
+
+.Testimonials .title  .mainTitle{
+    font-family: 'Caveat';
+    color: #ffb91a;
+    font-size: 40px;
+}
+.Testimonials .title .subTitle{
+    font-size: 35px;
+    font-weight: 700;
+    color: #000000d4;
+}
+.Testimonials .box-Client {
+
+}
+.Testimonials .box-Client .cardClient{
+    padding: 25px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Testimonials .box-Client .cardClient p{
+padding-bottom: 25px;
+padding-top: 15px;
+font-size: 19px;
+}
+.Testimonials .box-Client .cardClient .detailsClient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.Testimonials .box-Client .cardClient .detailsClient .imageClient{
+    width: 75px;
+}
+.Testimonials .box-Client .cardClient .detailsClient .imageClient img{
+border-radius: 50%;
+width: 100%;
+}
+.Testimonials .box-Client .cardClient .detailsClient .nameClient span{
+font-weight: bold;
+color: #A5141A;
+/* font-family: ; */
+}
+.Free-Delivery {
+    
+}
+.Free-Delivery  .deliveryTitle{
+
+}
+.Free-Delivery  .deliveryTitle .mainTitle{
+color: #ffb91a;
+font-family: 'Caveat';
+font-size: 40px;
+}
+.Free-Delivery  .deliveryTitle .subTitle{
+    font-size: 40px;
+font-weight: 700;
+margin-bottom: 25px;
+}
+.Free-Delivery .links{
+    margin-top: 35px;
+}
+.Free-Delivery .links a{
+
+}
+.Free-Delivery .links a img{
+    width: 165px;
+    margin-left: 10px;
+}
+.Free-Delivery .imagedescount{
+    position: relative;
+}
+.Free-Delivery .image{
+    position: relative;
+}
+.Free-Delivery .image img:last-child{
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    width: 227px;
+}
+.downloud{
+    background-color: #A5141A;
+    padding: 20px;
+}
+.downloud .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.downloud .box h2{
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.downloud .box button{
+    padding: 15px;
+    background-color: #ffb91a;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+footer .box{
+
+}
+footer .box h2{
+font-size: 20px;
+}
+footer .box p{
+
+}
+footer  .WORKING{
+font-weight: bold;
+}
+footer  .WORKING li{
+    font-weight: normal;
+    position: relative;
+}
+footer  .WORKING li::before {
+    content: '*';
+    position: absolute;
+    left: -16px;
+    top: 2px;
+    color: #A5141A;
+}
+footer .help{
+    font-weight: bold;
+}
+footer .help li a{
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+footer .boxContent h3{
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 25px;
+}
+footer .boxContent .links a{
+    padding: 8px 12px;
+    background-color: #A5141A;
+    color: white;
+    border-radius: 4px;
+}
+.copyRight{
+    padding-top: 50px;
+}
+.copyRight .box{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EEEEEE;
+    padding: 25px;
+}
+.copyRight .footer-links {
+    display: flex;
+}
+.copyRight .footer-links li{
+    margin-left: 15px;
+    display: flex;
+}
+.copyRight .footer-links li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responseve  start */
+@media (max-width:767px) {
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .socalMedia{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    header .navbar .navbar-nav .nav-item .nav-link:hover{
+    padding-left: 15px;
+    }
+    header .navbar .navbar-nav .nav-item p{
+        margin-left: 0;
+    }
+    .cart .cart-box{
+        width: 100%;
+        right: 0;
+    }
+    .meals{
+        display: flex;
+        flex-direction: column;
+    }
+    .bgHome{
+        background-position: 53% 55%;
+        min-height: 58vh;
+    }
+    .bgHome .title h2{
+        font-size: 21px;
+        width: 82%;
+    }
+    .bgHome .title{
+        top: 253px;
+        left: 22px;
+    }
+    .cardBurger .box .burgerCard img {
+        height: 349px;
+    }
+    .cardBurger .box .pizzaCard .textPrice .card-title, .cardBurger .box .chickensCard .textPrice .card-title, .cardBurger .box .burgerCard .textPrice .card-title{
+        font-size: 11px;
+    }
+    .cardBurger .box .pizzaCard .textPrice .discribtion, .cardBurger .box .chickensCard .textPrice .discribtion, .cardBurger .box .burgerCard .textPrice .discribtion{
+        margin-top: 4px;
+        font-size: 10px;
+    }
+    .cardBurger .box .burgerCard button{
+        padding: 10px 6px;
+        font-size: 11px;
+    }
+    .cardBurger .box .chickensCard img {
+        height: 175px;
+    }
+    .cardBurger .box .pizzaCard .price, .cardBurger .box .chickensCard .price, .cardBurger .box .burgerCard .price{
+        font-size: 17px;
+    }
+    .cardBurger .box .pizzaCard img{
+        height: 155px;
+    }
+    .aboutFood .title .subTitle{
+        width: 100%;
+        font-size: 25px;
+    }
+    .Deliver .title button{
+       padding: 7px 24px;
+    }
+    .Deliver .title .subTitle{
+        font-size: 12px;
+    }
+    .Deliver .title .mainTitle{
+        margin-top: 15px;
+    }
+    .Satisfaction-levl .box h2{
+        font-size: 25px;
+
+    }
+    .menu .menu-list h3{
+        font-size: 26px;
+    }
+    .menu .menu-list h2{
+        font-size: 22px;
+    }
+    .menu .menu-list .typeAndPrice h4{
+    font-size: 18px;
+    }
+    .menu .menu-list p{
+        font-size: 12px;
+    }
+    .meal-card .titleMeal h3{
+        font-size: 24px;
+    }
+    .meal-card .titleMeal h2{
+        font-size: 25px;
+    }
+    .meal-card .box-meal .box .image{
+        width: 155px;
+    }
+    .meal-card .box-meal .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .meal-card .box-meal .box .mealInformation h4{
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .meal-card .box-meal .box .mealInformation span {
+        font-size: 22px;
+        text-align: center;
+        display: block;
+    }
+    .meal-card .box-meal .box .mealInformation p{
+    color: #6b6b6b;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 9px;
+    }
+    .meal-card .box-meal .box .mealInformation button{
+        border: none;
+        border-bottom: 2px solid #A5141A;
+        padding: 7px;
+        margin: auto;
+        display: block;
+        font-size: 12px;
+
+    }
+    .meal-card .box-meal .box .mealInformation{
+        padding: 9px;
+    }
+    .ordering .foodTitle h3 {
+        font-size: 17px;
+    }
+    .ordering .foodTitle .saleAndlist{
+        display: block;
+    }
+    .ordering .foodTitle .saleAndlist .meal-type li::before{
+        left: 0;
+        top: 5px;
+    }
+    .ordering .foodTitle .saleAndlist span {
+        margin-top: -10px;
+        font-size: 11px;
+        width: 83%;
+        margin-bottom: 8px;
+    }
+    .Testimonials .title {
+        padding-top: 33px;
+    }
+    .Testimonials .title .mainTitle {
+        font-size: 32px;
+    }
+    .Testimonials .box-Client .cardClient {
+     padding: 5px;
+    }
+    .Free-Delivery .deliveryTitle{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .Free-Delivery .links{
+        display: flex;
+    }
+
+    .Free-Delivery .deliveryTitle .mainTitle{
+        font-size: 30px;
+    }
+    .Free-Delivery .deliveryTitle .subTitle {
+        font-size: 17px;
+    }
+    .Testimonials .title .subTitle {
+        font-size: 24px;
+    }
+    .Free-Delivery .image{
+        width: 300px!important;
+        margin: 25px auto;
+
+    }
+    .Free-Delivery .image img{
+    }
+    .Free-Delivery .image img:last-child{
+        left: 63%;
+    top: 19%;
+    width: 110px;
+    }
+    .downloud .box button{
+        padding: 4px;
+        font-size: 10px;
+    }
+    .downloud .box h2 {
+    font-size: 10px;
+    }
+    footer .help li a ,
+    footer .WORKING li{
+        font-size: 13px;
+    }
+    .copyRight .box{
+        flex-direction: column;
+    }
+    .copyRight .box .copyRightBox p{
+         font-size: 14px;
+    }
+    .copyRight .footer-links{
+        padding-left: 0;
+        font-size: 11px;
+    }
+    .copyRight {
+        padding-top:0 ;
+    }
+    .boxContent{
+        text-align: center;
+    }
+}
+@media (min-width:778px) and (max-width:991px) {
+    header .socalMedia{
+        margin-left: 0!important;
+    }
+    .meals{
+        justify-content: center;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    }
+    .cardBurger .box .pizzaCard .textPrice .card-title, .cardBurger .box .chickensCard .textPrice .card-title, .cardBurger .box .burgerCard .textPrice .card-title{
+        font-size: 20px;
+    }
+    .Deliver .title .subTitle{
+        font-size: 46px;
+    }
+    .menu .menu-list{
+        text-align: center;
+    }
+    .meal-card .box-meal .box{
+        display: block;
+    }
+    .meal-card .box-meal .box .image{
+    width: 176px;
+    margin: auto;
+    }
+    .meal-card .box-meal .box .mealInformation{
+        text-align: center;
+    }
+    .meal-card .box-meal .box .mealInformation h4{
+       width: 100%;
+    }
+    .ordering .foodTitle h3{
+        font-size: 37px;
+    }
+    .Free-Delivery .deliveryTitle {
+        text-align: center;
+    }
+    .Free-Delivery .deliveryTitle .subTitle{
+        font-size: 27px;
+    }
+    .Free-Delivery .links{
+        margin-top: 35px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .Free-Delivery .image{
+        position: relative;
+        width: 488px!important;
+        margin: auto;
+    }
+    .Free-Delivery .image img:last-child {
+       width: 145px;
+    }
+    .downloud .box h2 {
+    font-size: 13px;
+    }
+    .copyRight .footer-links li a {
+        font-size: 12px;
+    }
+    .copyRightBox p{
+        font-size: 13px;
+    }
+}
+@media (min-width:992px) {
+    .meals{
+        flex-wrap: wrap;
+    }
+}
+.show{
+    display: block;
+  
+}
+.hide{
+    display: none;
+    transition: all 300ms ease-in-out;
+}
+/* responseve  end */
